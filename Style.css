@@ -17,15 +17,25 @@ html {
   font-weight: bolder;
 }
 
-header {
+header .intro {
+  text-align: center;
   padding: 5px;
-  text-align:center
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(244, 240, 6);  /* Explicit yellow */
+  font-size: 40px;
+  font-weight: bolder;
+  margin: 0;  /* Add this to prevent default <p> margins */
 }
 
 .header-logo {
-    margin-top: 10px;
-    width: 300px;
-    height: auto;
+  width: 300px;
+  height: auto;
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-content .footer-logo {
@@ -34,7 +44,7 @@ header {
   margin-bottom: 5px;
 }
 
-footer {
+footer p {  /* Target ONLY paragraphs in footer */
   font-size: 20px;
   font-weight: bold;
   color: rgb(244, 240, 6);
