@@ -1,4 +1,4 @@
-html, body {
+html {
   background-color: rgb(14, 51, 78);
   height: 100%;
   margin: 0;
@@ -8,15 +8,13 @@ html, body {
   display: flex;
   flex-direction: column;
   min-height: auto;
+  
+}
+
+.intro {
   color: rgb(244, 240, 6);
   font-size: 40px;
   font-weight: bolder;
-}
-
-main {
-  flex: 1;
-  
-  
 }
 
 header {
