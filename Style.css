@@ -29,6 +29,13 @@ header .intro {
   margin: 0;  /* Add this to prevent default <p> margins */
 }
 
+.message {
+  text-align: center;
+  color: rgb(244, 240, 6);
+  font-size: 60px;
+
+}
+
 .header-logo {
   width: 300px;
   height: auto;
