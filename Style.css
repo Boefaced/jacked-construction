@@ -1,5 +1,5 @@
 html {
-  background-color: rgb(20,51,75);
+  background-color: #14324f;
   height: 100%;
   margin: 0;
 }
@@ -23,11 +23,11 @@ header .intro {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: rgb(244, 240, 6);  /* Explicit yellow */
+  color: rgb(244, 240, 6);  
   font-size: 40px;
   font-weight: bolder;
-  margin: 0;  /* Add this to prevent default <p> margins */
-}
+  margin: 0;
+} 
 
 .message {
   text-align: center;
@@ -51,7 +51,7 @@ header .intro {
   margin-bottom: 5px;
 }
 
-footer p {  /* Target ONLY paragraphs in footer */
+footer p {  
   font-size: 20px;
   font-weight: bold;
   color: rgb(244, 240, 6);
