@@ -90,6 +90,10 @@ nav a:hover {
   font-size: larger;
 }
 
+.service-info {
+  color: white;
+}
+
 /* Add these new rules */
 
 /* Service/Project Section Templates */
@@ -141,6 +145,10 @@ nav a:hover {
   padding: 12px;
   border-radius: 4px;
   border: none;
+}
+
+.contact-placeholder {
+  color: white;
 }
 
 /* ===== FOOTER ===== */
