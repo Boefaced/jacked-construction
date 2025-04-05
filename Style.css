@@ -1,6 +1,6 @@
-/* ===== GLOBAL STYLES ===== */
+
 html {
-  background-color: #14324f;
+  background-color: rgb(20, 50, 79);
   height: 100%;
   margin: 0;
   scroll-behavior: smooth; /* Smooth scrolling for anchor links */
@@ -11,7 +11,7 @@ body {
   font-family: 'Arial', sans-serif; /* Add default font */
 }
 
-/* ===== LAYOUT ===== */
+
 .container {
   display: flex;
   flex-direction: column;
