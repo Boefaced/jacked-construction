@@ -94,8 +94,6 @@ nav a:hover {
   color: white;
 }
 
-/* Add these new rules */
-
 /* Service/Project Section Templates */
 .service-card {
   background: rgba(255,255,255,0.1);
@@ -108,17 +106,15 @@ nav a:hover {
 .project-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-  margin-top: 30px;
+  gap: 30px;
+  margin: 40px;
 }
 
 .project-gallery img {
   width: 100%;
-  height: 250px; /* Fixed height */
-  object-fit: cover; /* Ensures images fill space without distortion */
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  height: 250px;
+  object-fit: cover;
+  display: block;
 }
 
 .project-gallery img:hover {
@@ -126,11 +122,29 @@ nav a:hover {
   box-shadow: 0 6px 12px rgba(0,0,0,0.3);
 }
 
-/* Add caption containers */
 .project-item {
   position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
 }
 
+.project-item:hover {
+  transform: translateY(-5px);
+}
+
+.project-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(20, 50, 79, 0.9);
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+}
 
 /* Contact Form Starter */
 .contact-form {
@@ -147,8 +161,15 @@ nav a:hover {
   border: none;
 }
 
-.contact-placeholder {
+.contact-placeholder a {
   color: white;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-placeholder a:hover {
+  color: white;
+  text-decoration: underline;
 }
 
 /* ===== FOOTER ===== */
