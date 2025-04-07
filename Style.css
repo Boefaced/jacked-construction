@@ -88,6 +88,7 @@ nav a:hover {
   max-width: 1200px;
   color: rgb(244, 240, 6);
   font-size: larger;
+  text-align: center;
 }
 
 .service-info {
@@ -107,7 +108,9 @@ nav a:hover {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 30px;
-  margin: 40px;
+  margin: 40px auto;
+  max-width: 650px;
+  padding: 0 20px;
 }
 
 .project-gallery img {
@@ -128,6 +131,8 @@ nav a:hover {
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
   transition: transform 0.3s ease;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .project-item:hover {
@@ -141,9 +146,10 @@ nav a:hover {
   right: 0;
   background: rgba(20, 50, 79, 0.9);
   color: white;
-  padding: 15px;
+  padding: 12px;
   text-align: center;
   font-weight: bold;
+  font-size: 1.1rem;
 }
 
 /* Contact Form Starter */
@@ -153,6 +159,7 @@ nav a:hover {
   max-width: 500px;
   margin: 0 auto;
 }
+
 .contact-form input, 
 .contact-form textarea {
   margin: 10px 0;
@@ -166,27 +173,48 @@ nav a:hover {
   font-size: 1.2rem;
   line-height: 1.6;
   text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 25px;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 
 .contact-placeholder a {
   color: white;
   text-decoration: none;
+  font-weight: normal;
   transition: all 0.3s ease;
-  padding: 2px 4px;
-  border-radius: 3px;
+  padding: 4px 8px;
+  border-radius: 4px;
 }
 
 .contact-placeholder a:hover {
-  color: white;
   background: rgba(244, 240, 6, 0.2);
   text-decoration: none;
 }
 
+.contact-placeholder p {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .contact-label {
-  color: white;
-  display: inline-block;
-  min-width: 60px;
+  color: rgb(244, 240, 6);
+  font-weight: bold;
+  min-width: 80px;
+  text-align: right;
+  padding-right: 15px;
+}
+
+#contact h2 {
+  color: rgb(244, 240, 6);
+  margin-bottom: 30px;
+  font-size: 1.8rem;
 }
 
 /* ===== FOOTER ===== */
@@ -227,7 +255,7 @@ footer p {
 }
 
 /* ===== MOBILE RESPONSIVENESS ===== */
-@media (max-width: 768px) {
+@media (max-width: 700px) {
   .header-logo {
     width: 200px; /* Smaller logo on mobile */ 
   }
@@ -247,15 +275,36 @@ footer p {
 
   .project-gallery {
     grid-template-columns: 1fr;
+    max-width: 400px;
   }
   
   .project-gallery img {
     height: 200px;
   }
 
+  .project-caption {
+    font-size: 1rem;
+    padding: 8px;
+  }
+
+  .contact-placeholder {
+    padding: 15px;
+  }
+
   .contact-placeholder a {
     padding: 4px 8px;
     display: inline-block;
+  }
+
+  .contact-placeholder p {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-label {
+    min-width: 100%;
+    text-align: center;
+    padding: 0 0 5px 0;
   }
   
   .floating-cta {
