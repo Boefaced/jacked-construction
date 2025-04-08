@@ -99,18 +99,15 @@ nav a:hover {
   text-align: center;
 }
 
-.residential-header {
+.residential-header, .commercial-header {
   color: white;
   font-style: oblique;
 }
 
-.residential-info {
+.residential-info, .commercial-info {
   color: white;
 }
 
-.commercial-info {
-  color: white;
-}
 
 /* Service/Project Section Templates */
 .service-card {
