@@ -99,12 +99,21 @@ nav a:hover {
   text-align: center;
 }
 
-.residential-header, .commercial-header {
+.residential-header {
   color: white;
   font-style: oblique;
 }
 
-.residential-info, .commercial-info {
+.commercial-header {
+  color: white;
+  font-style: oblique;
+}
+
+.residential-info {
+  color: white;
+}
+
+.commercial-info {
   color: white;
 }
 
