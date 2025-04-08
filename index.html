@@ -12,6 +12,23 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-XXXXXX');</script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ConstructionBusiness",
+        "name": "Jacked Construction",
+        "image": "https://www.jacked.construction/Images/JACKED-Logo-Dark-W-Border.png",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Your Address",
+          "addressLocality": "Meridian",
+          "addressRegion": "ID",
+          "postalCode": "83646",
+          "addressCountry": "US"
+        },
+        "telephone": "+12085913601"
+      }
+      </script>
 </head>
 <body>
   <div class="container">
@@ -35,13 +52,29 @@
       
       <section id="services" class="section-spacing">
         <h2>Our Services</h2>
-        <div class="service-card">
-          <h3>Residential Construction</h3>
-          <p class="service-info">Custom home building and remodeling services in Meridian, ID</p>
-        </div>
-        <div class="service-card">
-          <h3>Commercial Buildouts</h3>
-          <p class="service-info">Complete tenant improvements and office buildouts</p>
+        <div class="services-container">
+          <div class="service-column">
+            <h3>Residential Construction</h3>
+            <h4 class="residential-header">Custom home building and remodeling services in Meridian, ID</h4>
+            <div class="service-list">
+              <p class="residential-info">• T.V. Mounting</p>
+              <p class="residential-info">• Bathroom/Bedroom remodeling</p>
+              <p class="residential-info">• Deck construction</p>
+              <p class="residential-info">• Patio, porch, or terrace construction</p>
+              <p class="residential-info">• Kitchen/Laundry room remodeling</p>
+            </div>
+          </div>
+          <div class="service-column">
+            <h3>Commercial Buildouts</h3>
+            <h4 class="commercial-header">Complete tenant improvements and office buildouts</h4>
+            <div class="service-list">
+              <p class="commercial-info">• Demolition - Small-scale tear-downs, interior demo</p>
+              <p class="commercial-info">• Excavation & grading</p>
+              <p class="commercial-info">• Roof truss & structural reinforcements</p>
+              <p class="commercial-info">• Welding repairs</p>
+              <p class="commercial-info">• Signage mounts & exterior metalwork</p>
+            </div>
+          </div>
         </div>
       </section>
 

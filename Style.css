@@ -99,7 +99,16 @@ nav a:hover {
   text-align: center;
 }
 
-.service-info {
+.residential-header {
+  color: white;
+  font-style: oblique;
+}
+
+.residential-info {
+  color: white;
+}
+
+.commercial-info {
   color: white;
 }
 
@@ -110,6 +119,41 @@ nav a:hover {
   padding: 20px;
   margin: 20px 0;
 }
+
+.services-container {
+  display: flex; /* Side-by-side columns */
+  gap: 30px; /* Space between columns */
+  justify-content: center; /* Center the columns */
+  margin: 30px auto;
+  max-width: 1000px; /* Adjust as needed */
+}
+
+.service-column {
+  flex: 1; /* Equal width columns */
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  min-width: 250px; /* Prevent squeezing on small screens */
+}
+
+.service-column:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(244, 240, 6, 0.2);
+}
+
+
+
+.service-list {
+  text-align: left; /* Align bullets to the left */
+  margin-top: 15px;
+}
+
+.service-list p {
+  margin: 10px 0; /* Spacing between list items */
+  line-height: 1.4;
+}
+
+
 
 /* ===== PROJECT GALLERY ===== */
 .project-gallery {
@@ -284,6 +328,11 @@ footer p {
   
   .intro {
     font-size: 1.8rem;
+  }
+
+  .services-container {
+    flex-direction: column; /* Stack columns on mobile */
+    gap: 20px;
   }
 
   .project-gallery {
