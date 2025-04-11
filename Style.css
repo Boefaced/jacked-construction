@@ -312,6 +312,91 @@ footer p {
   box-shadow: 0 3px 10px rgba(0,0,0,0.2);
 }
 
+/* ===== LIGHTBOX STYLES ===== */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lightbox.active {
+  display: flex;
+}
+
+.lightbox-img {
+  max-width: 90%;
+  max-height: 80vh;
+  border: 2px solid rgb(20, 50, 79);
+  box-shadow: 0 0 20px rgba(20, 50, 79, 0.3);
+  border-radius: 5px;
+  animation: fadeIn 0.3s ease;
+}
+
+.lightbox-caption {
+  color: white;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-family: 'Arial', sans-serif;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: white;
+  text-shadow: 0 0 10px rgba(20, 50, 79, 0.8);
+}
+
+/* Navigation Buttons */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+  padding: 0 20px;
+  z-index: 10;
+}
+
+.prev-btn { 
+  left: 10px; 
+}
+
+.next-btn { 
+  right: 10px; 
+}
+
+.nav-btn:hover {
+  color: white;
+  transform: translateY(-50%) scale(1.2);
+  text-shadow: 0 0 10px rgba(20, 50, 79, 0.8);
+}
+
+/* Make project images clickable */
+.project-item img {
+  cursor: zoom-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
 /* ===== MOBILE RESPONSIVENESS ===== */
 @media (max-width: 700px) {
   .header-logo {
@@ -379,4 +464,12 @@ footer p {
     padding: 10px 15px;
     font-size: 0.9rem;
   }
+}
+
+.nav-btn {
+   font-size: 2.5rem; 
+}
+
+.close-btn { 
+  font-size: 2rem; 
 }
