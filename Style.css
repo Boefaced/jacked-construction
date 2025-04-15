@@ -310,7 +310,7 @@ nav a:hover {
 
 .mission-statement {
   color: white;
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 2vw, 1.2rem);
   line-height: 1.6;
   text-align: center;
   font-style: italic;
