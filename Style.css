@@ -57,6 +57,10 @@ header {
   transform: scale(1.02);
 }*/
 
+@font-face {
+  font-family: 'Bauhaus';
+  src: url('fonts/BauhausRegular.ttf') format('truetype');
+}
 
 /* ===== INTRO TEXT ===== */
 .intro {
@@ -67,6 +71,7 @@ header {
   margin: 20px auto;
   max-width: 90%; /* Prevent overly long lines */
   line-height: 1.3; /* Better readability */
+  font-family: 'Bauhaus';
 }
 
 .logo-caption {
